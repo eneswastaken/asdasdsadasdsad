@@ -22,6 +22,8 @@ exports.run = async (client, message, args) => {
 **<:51:1010178990155255808> m!herkeserolver** - Sunucudaki herkese toplu rol verir.
 **<:51:1010178990155255808> m!rolal** - Kullanıcıdan rol alır.
 **<:51:1010178990155255808> m!rolver** - Kullanıcıya rol verir.
+**<:51:1010178990155255808> m!panel-kur** - Sunucuda panel kurar.
+**<:51:1010178990155255808> m!panel-sil** - Sunucuda panel silerler.
 **<:51:1010178990155255808> m!nuke** - Kanaldaki mesajları yok eder.
 **<:51:1010178990155255808> m!yavaşmod** - Kanalda bekleme süresini ayarlar.
 **<:51:1010178990155255808> m!isimdeğiştir** - Etiketlenin kişinin ismini değiştirir.`)
