@@ -145,30 +145,4 @@ client.on('guildCreate', guild => {
     });
   };
 });
-
-client.on("message", async message => {
-  const ms = require('parse-ms')
-  
-  let cooldown = 1800000 /// Cooldown MS olarak kendinize göre ayarlayabilirsiniz.
-  
-  let sure = await db.fetch(`sahipsure_${message.author.id}`);
-  
-  let kisi = "851163417330843718" // ID'nizi 2 Tırnak Arasına Yazınız.
-      if(message.author.id === kisi) {
-      if (sure !== null && cooldown - (Date.now() - sure) > 0) {
-          let time = ms(cooldown - (Date.now() - sure));
-      } else {
-    if (message.content.length > 1) {
-  
-  db.set(`sahipsure_${message.author.id}`, Date.now());
-    const embed = new Discord.MessageEmbed()
-    .setDescription(`Sahibim Geldiiii.`)
-    .setColor(15844367)
-     message.channel.send(embed)
-    }
-  };
-  }
-  if (message.author.id !== kisi) return;
-  });
-
 client.login(process.env.token);
