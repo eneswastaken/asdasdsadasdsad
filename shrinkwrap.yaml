@@ -19,6 +19,7 @@ dependencies:
   ms: 2.1.3
   node-superfetch: 0.2.3
   nukleon: 0.0.2
+  num-parse: 1.0.1
   os: 0.1.1
   passport: 0.4.1
   passport-google-oauth2: 0.2.0
@@ -3125,6 +3126,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-x+7O+9snLl0iWWURIPH6XcIUki7GW1DkH/m0ZCsiHKDSqik2/33mhjf6ZFGXJ3jMzsN734/qhLb/q3TEGCxKLw==
+  /num-parse/1.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-H7fFw3wyc6Oydd1IITSNgkRs3lr9jxQsFK5EQOb1Mt1FcKkxmhXd76seyvrQhdtl3ofKSmMXVVNC7Ceg8qpcEw==
   /number-is-nan/1.0.1:
     dev: false
     engines:
@@ -4064,6 +4069,7 @@ specifiers:
   ms: ^2.1.3
   node-superfetch: ^0.2.3
   nukleon: ^0.0.2
+  num-parse: ^1.0.1
   os: ^0.1.1
   passport: ^0.4.1
   passport-google-oauth2: ^0.2.0
