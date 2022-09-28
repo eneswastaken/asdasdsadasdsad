@@ -116,33 +116,4 @@ var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 // client.on('debug', e => {
 //   console.log(chalk.bgBlue.green(e.replace(regToken, 'that was redacted')));
 // });
-
-//bot sunucuya girince kanal açıp bilgilendirme
-
-client.on('guildCreate', guild => {
-  if(guild.me.hasPermission('MANAGE_CHANNELS')) {
-    guild.channels.create(client.user.username, { type: 'text' }).then(channel => {
-      return channel.send(new Discord.MessageEmbed() 
-      .setColor("#660099")
-      .setFooter("MaveraBot", client.user.avatarURL())
-      .setThumbnail('https://media.discordapp.net/attachments/1022843509016895568/1023170182463627345/143d6bc7-3090-43dd-854c-def1789613a9.png?width=435&height=433')
-      .setDescription(`
-*<a:emoji_123:1011716944950480937> Selam;*
-**<a:583014055443169301:1012334678126112850> Benim adım Mavera. Beni sunucuna eklediğin için teşekkür ederim :) Sunucunu koruyabilir, sunucundaki üyeleri eğlendirebilir ve daha bir çok şeyi yapabilirim.**
-
-*<:9520_Amongus_pog:1007984090231877662> Bot İnfo;*
-**<:51:1010178990155255808> İstatistiklerim: Toplam \`${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()}\` Kullanıcı \`${client.guilds.cache.size.toLocaleString()}\` Sunucuya Hizmet Veriyorum.**
-**<:51:1010178990155255808> Prefixim: \`m!\`**
-*<a:583021641747923145:1012336321471189014> Bilgilendirme;*
-**<:51:1010178990155255808> Yardım Menüsü: \`m!yardım\`**
-**<:51:1010178990155255808> İstatistiklerim: \`m!istatistik\`**
-
-*:link: Bağlantılar;*
-<:888414495423225866:1005818896596611154> [**Destek Sunucum**](https://discord.gg/RvPfmr6CCx)
-<a:583014055443169301:1012334678126112850> [**Botu Ekle**](https://discord.com/api/oauth2/authorize?client_id=893238888179580958&permissions=8&scope=bot)
-<:onays:1015371223531802695> [**Oy Ver**](https://top.gg/bot/893238888179580958/vote)`)
-      );
-    });
-  };
-});
 client.login(process.env.token);
