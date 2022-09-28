@@ -10,8 +10,8 @@ exports.run = async (client, message, args) => {
 
   const embed = new Discord.MessageEmbed()
 .setColor('#660099')
-.setTitle('Mavera Botlist Menüsü')
-.setFooter("MaveraBot", client.user.avatarURL())
+.setTitle('BotlistBOT Botlist Menüsü')
+.setFooter("BotlistBOT", client.user.avatarURL())
 .setThumbnail('https://images-ext-1.discordapp.net/external/qejo50XEQHbwkly87vSlkZ12obuaYGLNvTzQpYAb3G4/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1023174970249056277/3bd5b0ec6744a35c20be353ccfc2b0d1.webp?width=433&height=433')
 .setImage("https://media.discordapp.net/attachments/1022843509016895568/1024035336847896616/Mercy_Afis.png?width=576&height=324")
 .setDescription(`*Ana Komutlar;*
