@@ -7,12 +7,8 @@ var prefix = ayarlar.prefix;
 
 module.exports = client => {
 var oyun = [
- '✨ m!yardım',
- '🎃 m!botlistyardım',
- '🎫 m!ticketyardım',
- '🤝 discord.gg/altyapilar',
- '🤝 discord.gg/altyapilar',
- '🤝 discord.gg/altyapilar'
+ 'Abone Ol!',
+ 'v13 v14 Altyapılar'
     ];
 
     setInterval(function() {
