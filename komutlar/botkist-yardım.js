@@ -12,7 +12,7 @@ exports.run = async (client, message, args) => {
 .setColor('#660099')
 .setTitle('BotlistBOT Botlist Menüsü')
 .setFooter("BotlistBOT", client.user.avatarURL())
-.setThumbnail('https://images-ext-1.discordapp.net/external/qejo50XEQHbwkly87vSlkZ12obuaYGLNvTzQpYAb3G4/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1023174970249056277/3bd5b0ec6744a35c20be353ccfc2b0d1.webp?width=433&height=433')
+.setThumbnail('https://media.discordapp.net/attachments/1022843509016895568/1028422365765435515/02754fcf38260bc71757cb05faa60370.png?width=403&height=403')
 .setImage("https://media.discordapp.net/attachments/1022843509016895568/1024035336847896616/Mercy_Afis.png?width=576&height=324")
 .setDescription(`*Ana Komutlar;*
 
